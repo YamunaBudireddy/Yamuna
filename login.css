@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      width: 320px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .login-container input:focus {
+      border-color: #4facfe;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #4facfe;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .login-container button:hover {
+      background: #0099ff;
+    }
+
+    .login-container a {
+      display: block;
+      margin-top: 15px;
+      color: #4facfe;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-container a:hover {
+      text-decoration: underline;
+    }
+
+    /* Optional: avatar circle */
+    .avatar {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: url('https://cdn-icons-png.flaticon.com/512/847/847969.png') no-repeat center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="avatar"></div>
+    <h2>Login</h2>
+    <form action="welcome.html" method="post">
+      <input type="text" placeholder="Username" name="username" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <button type="submit">Login</button>
+      <a href="#">Forgot Password?</a>
+    </form>
+  </div>
+
+</body>
+</html>
